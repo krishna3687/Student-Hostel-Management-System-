@@ -1,0 +1,608 @@
+<html>  
+    <head>  
+        <style>  
+  body{background-color:#eaf0fb;
+    padding:20px;
+    box-sizing:border-box;}
+    .nav {
+  background: #1558c0;
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(21, 88, 192, 0.25);
+}
+
+.addstu{padding-left:560px;}
+
+.addbtn{height:40px;
+width:70px;
+background-color:#1a73e8;
+color: white;
+border-radius:5px;
+font-weight:bold;}
+
+
+/*navigation part*/
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-logo img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  flex-wrap: wrap;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.18s, color 0.18s;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.nav-links a.logout {
+  color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 8px;
+  font-weight:bold;
+}
+
+
+
+.nav-links a.logout:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+/*stats box*/
+
+
+
+ .number{display:flex; 
+flex:1;
+justify-content:center;
+align-items: center;
+text-align:center;
+font-size:26px;
+font-weight:bold;}    
+
+.label {display:flex; 
+justify-content:center;
+align-items: center;
+text-align:center;
+}      
+
+.blabel {display:flex; 
+justify-content:center;
+align-items: center;
+
+}  
+       
+            
+            
+.statbox{margin-left:20px;
+border:3px solid #eaf0fb;;
+border-radius:10px;
+height:100px;
+width:180px;
+background-color:white;
+}
+
+
+
+.statbox .blabel{color:#888;
+  font-size:11px;
+ font-weight:bold;
+  margin-top:5px;}
+
+  .statbox .label{color:#888;
+  font-size:8px;
+  margin-top:5px;}
+  
+  .statbox .number{color:#888;
+  
+  margin-top:20px;}
+  
+  
+  
+  
+
+  .statbox.blue .number{color:#1a73e8;}
+  .statbox.blue{border-top-color:#1a73e8;}
+
+  .statbox.red .number{color:red;}
+  .statbox.red{border-top-color:red;}
+   
+   .statbox.orange .number{color:orange;}
+   .statbox.orange{border-top-color:orange;}
+   
+   .statbox.green .number{color: green;}
+    .statbox.green{border-top-color:green;}
+        
+.stats{display:flex;
+margin-left:60px
+}
+
+p{text-align: center;
+  margin-top: 0px;}
+
+.page-title {
+  text-align: center;
+  
+}
+
+
+/* table part*/
+
+table {
+  border-collapse: collapse;
+  width:95%;
+  
+  margin:auto;
+  
+  margin-bottom:40px;
+  
+}
+
+  .stuid{
+      font-size: 11px;
+      color: #aaa;
+      margin-top: 2px;
+    }
+
+ thead tr{background-color:#eaf0fb;
+ height:25px;
+ margin-left:0px;}
+ 
+ thead th{
+   text-align:left;
+   padding-left:17px;
+}
+ 
+  td{padding :12px 14px;
+  border-bottom: 2px solid #f0f0f0;} 
+  
+.tablecard{background-color:white;
+ align-items: center;
+ margin:30px;
+ border-radius:12px;
+ padding:20px 20px;} 
+ 
+ .view {background: #eaf0fb;
+ 
+      color: #1a73e8;
+      border: 1.5px solid #1a73e8;
+      border-radius:4px;
+      transition:all 0.2s;
+      }
+.view:hover {background-color:#1a73e8;
+color :white;
+}  
+      
+ 
+ .searchrow{margin-left:300px;
+ margin-right:0px;
+ 
+ }
+ 
+ .searchfilter{margin-left:0px;
+ }
+ 
+ .title{color:#1a73e8;
+ font-weight:bold;}
+      
+.top{display: flex;
+    margin:20px;  
+ gap:16px;     
+ height:50px;
+ display: flex;
+  border-bottom: 1px solid #1a73e8;    
+      align-items: center;     }   
+ 
+ 
+ .paid{background: #e6f4ea;
+      color: #34a853;
+      padding:6px 6px;
+      border-radius:6px;}
+      
+ .pending {background: #fff3e0;
+      color: #f9ab00;
+      padding:6px 6px;
+      border-radius:6px;}
+      
+ .overdue {background: #fce8e6;
+      color: #ea4335;
+      padding:6px 6px;
+      border-radius:6px;}       
+      
+/*table 2*/
+
+.card2{margin-top:8px;}
+
+.roomfloor{
+      font-size: 11px;
+      color: #aaa;
+      margin-top: 2px;
+    }
+ 
+ .block{font-weight :bold;
+ font-size :17px;
+ color: #1a73e8;
+ }
+
+.roominfo{margin-left:0px;
+padding-left:0px;}
+
+.room{padding-left: 0px;}
+
+
+
+.bar-area{width:100%}
+
+.bar-bg{height:6px;
+overflow:hidden;
+background-color:#eaf0fb;
+border-radius:3px;
+margin-bottom:4px;}
+
+.bar-fill {height:100px;
+border-radius:3px;}
+
+.fill-full{background-color:red;}
+
+.fill-high{background-color:#ffdc2b;}
+
+.fill-low{background-color:green;}
+
+
+
+.d{padding-left:400px;}
+
+/*table 3*/
+
+
+.complaint{
+      font-size: 11px;
+      color: #aaa;
+      margin-top: 2px;
+    }
+    
+.viewcol{text-align:right;}
+        </style>
+        
+    </head>
+    <body>
+   <nav class="nav">
+  <a class="nav-logo" href="#">
+    <img src="https://i.imgur.com/Bygdhpa.png" alt="CHM SHMS Logo" />
+    CHM SHMS
+  </a>
+  <div class="nav-links">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="registration.html">Registration</a>
+    <a href="fees.html">Fee Records</a>
+    <a href="complaint.html">Complaint</a>
+    <a href="login.html" class="logout">Log Out</a>
+  </div>
+</nav>    
+            </div>
+        </div>
+
+<div class="page-title">
+  <h2>Admin Dashboard</h2></div>
+  <p>Academic Year 2025–26</p>
+
+
+<!-- cards -->
+
+        
+        
+  <div class="stats">
+    <div class="statbox blue">
+         <div class="number">148</div>
+    <div class="blabel">Total Students</div>     
+      <div class="label">Added 12 Students This Month</div>
+    </div>
+    
+    <div class="statbox green">
+         <div class="number">62</div>
+         <div class="blabel">Room Occupied</div>
+      <div class="label">Of 80 Total </div>
+    </div>
+    
+    <div class ="statbox orange">
+    <div class ="number">₹1.4L</div>
+    <div class="blabel">Fee Pending</div>    <div class ="label">Of 34 Students</div>  
+    </div>
+    
+    <div class="statbox red">
+    <div class="number">3</div>
+  <div class="blabel">Open Complaints</div> 
+   <div class="label">Need Action</div>
+    </div>
+    
+    </div>
+    
+    <!--  Recent Student-->
+    
+    <div class ="tablecard">
+    <div class ="top">
+ <div class="title">
+     Recent Students 
+ </div> 
+   <div class="addstu">
+       <button class="addbtn">+ Add Students</button>
+  
+   </div>
+   </div>
+   
+   
+   
+ <table>
+  <thead>
+      <tr>
+           <th>Student</th>
+          <th>Room</th>
+          <th>course</th>
+          <th>Fee Status</th>
+          <th>Action</th>
+      </tr>
+      
+      
+  </thead>   
+  <tbody class="fee body">
+     <tr>
+        
+  <td >
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>    
+  </td>
+
+  <td>A-201</td>
+  <td>Fy-BscIT</td>
+
+  <td>
+    <span class="paid">Paid</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>
+
+ <tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>    
+  </td>
+
+  <td>A-201</td>
+  <td>Fy-BscIT</td>
+
+  <td>
+    <span class="paid">Paid</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>    
+  </td>
+
+  <td>A-201</td>
+  <td>Fy-BscIT</td>
+
+  <td>
+    <span class="paid">Paid</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>    
+  </td>
+
+  <td>A-201</td>
+  <td>Fy-BscIT</td>
+
+  <td>
+    <span class="paid">Paid</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>      
+      
+  </tbody>
+ </table>
+</div>
+ 
+ 
+ <!-- /*Room Table*/ -->
+   
+  <div class ="tablecard">
+    <div class ="top">
+ <div class="title">
+     Room Occupancy 
+ </div> 
+   
+   </div>
+ <table>
+   
+  <tbody class="room body">
+     <tr>
+         <td><div class ="block">A</div></td>
+  
+  <td>
+      <div class ="roominfo">
+    <div class="roomname">Block A- Single Room</div>
+    <div class="roomfloor">Ground +First Floor</div> 
+    </div>   
+  </td>
+  <td>
+  <div class="bar-area">
+      <div class ="bar-bg">
+  <div class ="bar-fill fill-full" style="width:100%"></div>
+  </div>
+  </div>
+  <div class ="roomfloor">20/20 Full </div>
+  </td>
+</tr>
+
+ <tr>
+         <td><div class ="block">B</div></td>
+  
+  <td>
+      <div class ="roominfo">
+    <div class="roomname">Block B- Double Room</div>
+    <div class="roomfloor">Second + Third Floor</div> 
+    </div>   
+  </td>
+  <td>
+   <div class="bar-area">
+      <div class ="bar-bg">
+  <div class ="bar-fill fill-high" style="width:75%"></div>
+  </div>
+  </div>
+  <div class ="roomfloor">30/40 Full</div></div>
+  </td>
+</tr>
+
+
+<tr>
+         <td><div class ="block">C</div></td>
+  
+  <td>
+      <div class ="roominfo">
+    <div class="roomname">Block C- Triple Room</div>
+    <div class="roomfloor">Fourth Floor</div> 
+    </div>   
+  </td>
+  <td>
+ <div class="bar-area">
+      <div class ="bar-bg">
+  <div class ="bar-fill fill-low" style="width:50%"></div>
+  </div>
+  </div>
+  <div class ="roomfloor">08/20 Full</div></div>
+  </td>
+</tr>
+
+ 
+      
+  </tbody>
+ </table>
+      
+   </div>  
+   
+   <!-- complaint -->
+   
+   
+   <div class ="tablecard">
+    <div class ="top">
+ <div class="title">
+     Recent Complaints
+ </div> 
+ <div class="addstu">
+       <button class="addbtn">View All</button>
+  
+   </div>
+   
+   </div>
+ <table>
+   
+  <tbody class="room body">
+     <tr>
+         
+  
+  <td>
+      <div class ="complaintinfo">
+    <div class="roomname">Rahul Sharma, A-201</div>
+     <div class="complaint">Water supply not working since morning</div> 
+    </div>   
+  </td>
+ <td class="viewcol">
+    <button class="view">View</button>
+</td>
+</tr>
+
+ <tr>
+         
+  
+  <td>
+      <div class ="complaintinfo">
+    <div class="roomname">Rahul Sharma, A-201</div>
+     <div class="complaint">Water supply not working since morning</div> 
+    </div>   
+  </td>
+  <td class="viewcol">
+    <button class="view">View</button>
+</td>
+</tr>
+
+<tr>
+         
+  
+  <td>
+      <div class ="complaintinfo">
+    <div class="roomname">Rahul Sharma, A-201</div>
+     <div class="complaint">Water supply not working since morning</div> 
+    </div>   
+  </td>
+  <td class="viewcol">
+    <button class="view">View</button>
+</td>
+</tr>
+
+
+ 
+      
+  </tbody>
+ </table>
+      
+   </div>
+      
+</body>
+
+</html>  
