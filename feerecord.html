@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+</head>
+<body>
+    <html>
+    <head >
+        <style>
+  body{background-color:#eaf0fb;
+    padding:20px;
+    box-sizing:border-box;}
+  
+  table {
+  border-collapse: collapse;
+  width:95%;
+  
+  margin:auto;
+  
+  margin-bottom:40px;
+  margin-bottom:60px;
+}
+
+  
+
+ thead tr{background-color:#eaf0fb;
+ height:35px;}
+ 
+  td{padding :12px 14px;
+  border-bottom: 2px solid #f0f0f0;} 
+  
+ input{height:35px;
+ width:240px;
+ border-radius:6px;
+ border:grey 2px solid;
+ } 
+  
+  select{height:40px;
+ width:140px;
+ border-radius:6px;
+ border:grey 1px solid;} 
+  
+ .tablecard{background-color:white;
+ align-items: center;
+ margin:30px;
+ border-radius:12px;
+ padding:20px 20px;} 
+ 
+ .view {background: #eaf0fb;
+      color: #1a73e8;
+      border: 1.5px solid #1a73e8;
+      border-radius:4px;
+      transition:all 0.2s;
+      }
+.view:hover {background-color:#1a73e8;
+color :white;
+}  
+      
+ 
+ .searchrow{margin-left:300px;
+ margin-right:0px;
+ 
+ }
+ 
+ .searchfilter{margin-left:0px;
+ }
+ 
+ .title{color:#1a73e8;
+ font-weight:bold;}
+      
+.top{display: flex;
+    margin:20px;  
+ gap:16px;     
+ height:70px;
+ display: flex;
+  border-bottom: 1px solid #1a73e8;    
+      align-items: center;     }   
+ 
+ 
+ .paid{background: #e6f4ea;
+      color: #34a853;
+      padding:6px 6px;
+      border-radius:6px;}
+      
+ .pending {background: #fff3e0;
+      color: #f9ab00;
+      padding:6px 6px;
+      border-radius:6px;}
+      
+ .overdue {background: #fce8e6;
+      color: #ea4335;
+      padding:6px 6px;
+      border-radius:6px;}       
+      
+ 
+        
+.number {display:flex; 
+flex:1;
+justify-content:center;
+align-items: center;
+text-align:center;
+font-size:26px;
+font-weight:bold;}    
+
+ .label {display:flex; 
+justify-content:center;
+align-items: center;
+tect-align:center;}        
+            
+            
+.statbox{margin-left:20px;
+border:3px solid #eaf0fb;;
+border-radius:10px;
+height:100px;
+width:180px;
+background-color:white;
+}
+
+  .statbox .label{color:#888;
+  font-size:15px;
+  margin-top:5px;}
+  
+  .statbox .number{color:#888;
+  
+  margin-top:20px;}
+
+  .statbox.blue .number{color:#1a73e8;}
+  .statbox.blue{border-top-color:#1a73e8;}
+
+  .statbox.red .number{color:red;}
+  .statbox.red{border-top-color:red;}
+   
+   .statbox.orange .number{color:orange;}
+   .statbox.orange{border-top-color:orange;}
+   
+   .statbox.green .number{color: green;}
+    .statbox.green{border-top-color:green;}
+        
+.stats{display:flex;
+margin-left:60px
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+   .nav {
+  background: #1558c0;
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(21, 88, 192, 0.25);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-logo img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  flex-wrap: wrap;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.18s, color 0.18s;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+.nav-links a.logout {
+  color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 8px;
+  font-weight:bold;
+}
+
+
+
+.nav-links a.logout:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+        </style>
+        
+    </head>
+    <body>
+   <nav class="nav">
+  <a class="nav-logo" href="#">
+    <img src="https://i.imgur.com/Bygdhpa.png" alt="CHM SHMS Logo" />
+    CHM SHMS
+  </a>
+  <div class="nav-links">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="registration.html">Registration</a>
+    <a href="feerecord.html">Fee Records</a>
+    <a href="complaint.html">Complaint</a>
+    <a href="login.html" class="logout">Log Out</a>
+  </div>
+</nav>
+            
+            
+            
+            </div>
+        </div>    
+<div class="page-title">
+  <h2>Fee Records</h2>
+  <p>Academic Year 2025–26</p>
+</div>
+
+<div class="stats">
+    <div class="statbox blue">
+         <div class="number">₹8.4L</div>
+      <div class="label">Total Collected</div>
+    </div>
+    
+    <div class="statbox green">
+         <div class="number">114</div>
+      <div class="label">Student paid</div>
+    </div>
+    
+    <div class ="statbox orange">
+    <div class ="number">34</div>
+    <div class ="label">Fees pending</div>  
+    </div>
+    
+    <div class="statbox red">
+    <div class="number">12</div>
+   <div class="label">Overdue</div>
+    </div>
+    
+    </div>
+    
+<div class ="tablecard">
+    <div class ="top">
+ <div class="title">
+     Payment Records
+ </div> 
+   <div class="searchrow"><input type ="text"id="search" placeholder="Search Name or Id..."
+   oninput="searchtable()">
+  
+   </div>
+   <div class ="searchfilter">
+       <select id="statusfilter" onchange="searchtable()">
+  <option value ="all">All Status</option>   
+  <option value="paid">Paid</option>   
+  <option value ="overdue">Overdue</option>
+  <option value="pending">Pending</option>
+           
+       </select>
+   </div>
+   </div>
+   
+ <table>
+  <thead>
+      <tr>
+           <th>Student</th>
+          <th>Room</th>
+          <th>Total Fee</th>
+          <th>Paid</th>
+          <th>Balance</th>
+          <th>Due Date</th>
+          <th>Status</th>
+          <th>Action</th>
+      </tr>
+      
+      
+  </thead>   
+  <tbody class="fee body">
+     <tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>
+  </td>
+
+  <td>A-201</td>
+  <td>₹60,000</td>
+  <td>₹60,000</td>
+  <td class="clear">—</td>
+  <td>31 March 2026</td>
+
+  <td>
+    <span class="paid">Paid</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>
+
+ <tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>
+  </td>
+
+  <td>A-201</td>
+  <td>₹60,000</td>
+  <td>₹60,000</td>
+  <td class="unclear">—</td>
+  <td>31 March 2026</td>
+
+  <td>
+    <span class="overdue">overdue</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr> 
+<tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>
+  </td>
+
+  <td>A-201</td>
+  <td>₹60,000</td>
+  <td>₹60,000</td>
+  <td class="clear">—</td>
+  <td>31 March 2026</td>
+
+  <td>
+    <span class="pending">pending</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>
+<tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>
+  </td>
+
+  <td>A-201</td>
+  <td>₹60,000</td>
+  <td>₹60,000</td>
+  <td class="clear">—</td>
+  <td>31 March 2026</td>
+
+  <td>
+    <span class="paid">Paid</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>
+<tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>
+  </td>
+
+  <td>A-201</td>
+  <td>₹60,000</td>
+  <td>₹60,000</td>
+  <td class="clear">—</td>
+  <td>31 March 2026</td>
+
+  <td>
+    <span class="paid">Paid</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>
+<tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>
+  </td>
+
+  <td>A-201</td>
+  <td>₹60,000</td>
+  <td>₹60,000</td>
+  <td class="clear">—</td>
+  <td>31 March 2026</td>
+
+  <td>
+    <span class="paid">Paid</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>
+<tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>
+  </td>
+
+  <td>A-201</td>
+  <td>₹60,000</td>
+  <td>₹60,000</td>
+  <td class="clear">—</td>
+  <td>31 March 2026</td>
+
+  <td>
+    <span class="paid">Paid</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>
+<tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>
+  </td>
+
+  <td>A-201</td>
+  <td>₹60,000</td>
+  <td>₹60,000</td>
+  <td class="clear">—</td>
+  <td>31 March 2026</td>
+
+  <td>
+    <span class="paid">Paid</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>
+<tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>
+  </td>
+
+  <td>A-201</td>
+  <td>₹60,000</td>
+  <td>₹60,000</td>
+  <td class="clear">—</td>
+  <td>31 March 2026</td>
+
+  <td>
+    <span class="paid">Paid</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>
+<tr>
+  <td>
+    <div class="stuname">Rahul Sharma</div>
+    <div class="stuid">stu-0148</div>
+  </td>
+
+  <td>A-201</td>
+  <td>₹60,000</td>
+  <td>₹60,000</td>
+  <td class="clear">—</td>
+  <td>31 March 2026</td>
+
+  <td>
+    <span class="paid">Paid</span>
+  </td>
+
+  <td>
+    <button class="view">View</button>
+  </td>
+</tr>     
+      
+      
+  </tbody>
+ </table>  
+   <script >
+  function searchtable(){
+var searchvalue= document.getElementById('search').value.toLowerCase();
+
+var statusvalue= document.getElementById('statusfilter').value;
+
+
+var rows= document.querySelectorAll('tbody tr');
+
+for(var i=0;i<rows.length;i++){
+    var row = rows[i];
+    var rowtext= row.innerText.toLowerCase();
+    
+var rowstatus= row.querySelector('span').innerText.toLowerCase();
+
+
+var matchsearch =
+rowtext.indexOf(searchvalue) !== -1;
+  
+var matchstatus =
+statusvalue === "all" || rowstatus === statusvalue;
+if(matchsearch && matchstatus){
+row.style.display = "";
+} else {
+row.style.display = "none";
+}
+
+}  
+          
+          
+  }    
+       
+   </script>
+   
+    
+</div>   
+    
+    
+</div>
+
+</div>
+
+</body>
+</html>
