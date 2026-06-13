@@ -59,12 +59,12 @@ input{width:100%;}
         </div>
        <div class="s">
         
-<input type="text" placeholder ="Username"class="form-control mb-3" ><br><br></div>
+<input type="text" placeholder ="Username"class="form-control mb-3" id="id" ><br><br></div>
         <div class="s">  
 
 
 <input type="password"
-placeholder="Password"class="form-control mb-3">  
+placeholder="Password"class="form-control mb-3" id="password">  
  </div> &nbsp;&nbsp;&nbsp;&nbsp;
  
  <a href="forgetpassword.html" style="margin-left:550px">Forget Password?</a>
@@ -74,7 +74,7 @@ placeholder="Password"class="form-control mb-3">
              <a href="Registration.html" style="margin-left:470px; margin-top:0px;">NewUser? CreateNewAccount?</a>
             
         
-       <div class="s">  <button class="btn btn-primary">sign in</button>
+       <div class="s">  <button class="btn btn-primary" onclick="login()">sign in</button>
          </div> 
          </div>
          <script>
@@ -84,6 +84,21 @@ placeholder="Password"class="form-control mb-3">
              forEach(function(t)
                 { t.classList.remove("active")});
         btn.classList.add("active")
+        
+ 
+     
+ }      
+        
+        function login(){
+ let id = document.getElementById('id').value;
+ let password = document.getElementById('password').value;
+   if(id ==="Krishna@3687" &&  password === "8850820643"){
+       window.location.href="dashboard.html";
+       
+   }
+ else{alert("invalid id and password")}  
+   
+        
              }
          </script>
     </body>
