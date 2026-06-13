@@ -297,7 +297,7 @@
  <br><br>
  <div class ="d">
      <div class="s">
- <button class="register">Register Student</button>
+ <button class="register" onclick="validate()">Register Student</button>
  <br><br>
  </div>
  
@@ -320,5 +320,29 @@
       document.getElementById('gno').value ="";
   }          
               
+  function validate(){
+      let name = document.getElementById('fname').value;
+   if(name===""){
+       alert('Name is required')
+   }
+   
+   let lname = document.getElementById('lname').value;
+   if(lname===""){
+       alert('lastName is required')
+       
+   }   
+   
+   let phno = document.getElementById('phno').value;
+   if(phno===""){
+       alert('phone no is required')
+   }
+   
+   let email = document.getElementById('email').value;
+   if(email===""){
+       alert('email is required')
+   }
+      
+  }          
               
           </script>
+          
